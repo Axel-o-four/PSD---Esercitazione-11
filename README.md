@@ -4,12 +4,24 @@
 
 #### Esercizio 1a
 
-Sviluppare la funzione mergeSortSoloStampe(int n) che stampa la sequenza di operazioni necessarie per eseguire il merge sort iterativo di un array di n elementi.
-NOTA: la funzione stampa solo la descrizione delle chiamate a merge necessarie, ma non ordina un array.
+Sviluppare la funzione mergeSortSoloStampe(int n) che stampa
+la sequenza di operazioni necessarie per eseguire il merge sort iterativo di
+un array di n elementi ("dal basso verso l'alto").
+NOTE: la funzione stampa solo la descrizione delle chiamate a merge necessarie, ma non ordina un array.
+Di seguito per n-m si intende il sottoarray dall'elemento con indice n all'elemento con indice m.
+0-0 indica il sottoarray dall'elemento con indice 0 a quello con indice 0 (quindi di grandezza 1).
+0-1 indica il sottoarray dall'elemento con indice 0 a quello con indice 1 (quindi di grandezza 2).
+ecc.
 
 #### Esercizio 1b
 
 Sviluppare la funzione mergeSort in forma iterativa. Suggerimento: potete riutilizzare la funzione merge (vedi file caricati nel canale Teoria)
+
+Come si individuano gli intervalli da fondere?
+- curr_size: la dimensione corrente dei blocchi (1 → 2 → 4...)
+- left_start: inizia da 0 e avanza a passi di 2 * curr_size
+- left_end: left_start + curr_size - 1
+- right_end: min(left_start + 2 * curr_size - 1, n - 1)
 
 Scrivere inoltre un file main.c che utilizza le due funzioni.
 
