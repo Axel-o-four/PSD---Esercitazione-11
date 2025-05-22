@@ -5,8 +5,7 @@
 #### Esercizio 1a
 
 Sviluppare la funzione mergeSortSoloStampe(int n) che stampa
-la sequenza di operazioni necessarie per eseguire il merge sort iterativo di
-un array di n elementi ("dal basso verso l'alto").
+la sequenza di operazioni necessarie per eseguire il merge sort iterativo di un array di n elementi ("dal basso verso l'alto").
 NOTE: la funzione stampa solo la descrizione delle chiamate a merge necessarie, ma non ordina un array.
 Di seguito per n-m si intende il sottoarray dall'elemento con indice n all'elemento con indice m.
 0-0 indica il sottoarray dall'elemento con indice 0 a quello con indice 0 (quindi di grandezza 1).

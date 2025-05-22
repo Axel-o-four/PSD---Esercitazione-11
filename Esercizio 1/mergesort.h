@@ -1,2 +1,2 @@
 void mergeSortSoloStampe(int n);
-void mergeSortIterativo(List l);
+void mergeSortIterativo(int a[], int n);
